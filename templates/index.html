@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernization of Level 4 EDI Edits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Add Highlight.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <!-- Add Highlight.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Add COBOL language support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/cobol.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Modernization of Level 4 EDI Edits</h1>
+    </header>
+
+    <div class="content">
+        
+        <div class="content">
+            <div class="column">
+                <h2>COBOL Procedure Division</h2>
+                <pre><code class="language-cobol" id="cobolProcedureCode"></code></pre>
+            </div>
+            <div class="column">
+                <h2>COBOL Code Documentation</h2>
+                <div id="cobolDocsPreview" class="markdown-preview"></div>
+            </div>
+            <div class="column">
+                <h2>User Story</h2>
+                <div id="userStoryPreview" class="markdown-preview"></div>
+            </div>
+            <div class="column">
+                <h2>Python Function</h2>
+                <pre><code class="language-python" id="pythonFunctionCode"></code></pre>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+</html>
