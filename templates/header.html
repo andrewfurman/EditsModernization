@@ -12,29 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <!-- Add COBOL language support -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/cobol.min.js"></script>
-    <style>
-        header {
-            position: relative;
-            padding: 10px 20px;
-            background-color: #e6f3ff;
-        }
-        nav {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        h1 {
-            text-align: center;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav>
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('quadrants') }}">Quadrants</a>
+            <a href="{{ url_for('user_stories') }}">User Stories</a>
         </nav>
         <h1>Modernization of Level 4 EDI Edits</h1>
     </header>

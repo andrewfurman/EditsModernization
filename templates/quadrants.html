@@ -1,23 +1,24 @@
-<!-- templates/index.html and templates/quadrants.html -->
 {% include "header.html" %}
 
 {% block content %}
 <div class="content">
-    <div class="column">
-        <h2>COBOL Procedure Division</h2>
-        <pre><code class="language-cobol" id="cobolProcedureCode"></code></pre>
-    </div>
-    <div class="column">
-        <h2>COBOL Code Documentation</h2>
-        <div id="cobolDocsPreview" class="markdown-preview"></div>
-    </div>
-    <div class="column">
-        <h2>User Story</h2>
-        <div id="userStoryPreview" class="markdown-preview"></div>
-    </div>
-    <div class="column">
-        <h2>Python Function</h2>
-        <pre><code class="language-python" id="pythonFunctionCode"></code></pre>
+    <div class="quadrants-grid">
+        <div class="quadrant">
+            <h2>COBOL Procedure Division</h2>
+            <pre><code class="language-cobol" id="cobolProcedureCode"></code></pre>
+        </div>
+        <div class="quadrant">
+            <h2>COBOL Code Documentation</h2>
+            <div id="cobolDocsPreview" class="markdown-preview"></div>
+        </div>
+        <div class="quadrant">
+            <h2>User Story</h2>
+            <div id="userStoryPreview" class="markdown-preview"></div>
+        </div>
+        <div class="quadrant">
+            <h2>Python Function</h2>
+            <pre><code class="language-python" id="pythonFunctionCode"></code></pre>
+        </div>
     </div>
 </div>
 {% endblock %}
